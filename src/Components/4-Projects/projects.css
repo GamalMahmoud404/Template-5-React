@@ -1,0 +1,307 @@
+.sec2 {
+    /* background-color: rgb(119, 9, 9) !important; */
+    width: 95%;
+    margin: -120px auto 40px auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hederName {
+    /* background-color: rgb(61, 37, 6); */
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+  }
+  
+  .pClass {
+    padding: 20px 0px;
+  }
+  
+  .link-all {
+    background-color: rgb(47, 47, 47);
+    display: flex;
+    gap: 2px;
+    box-shadow: 0px 0px 3px 1px rgb(0, 179, 255);
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  .linkA {
+    display: block;
+    padding: 15px 50px;
+    text-decoration: none;
+    transition: 0.6s;
+    color: rgb(255, 255, 255);
+    /* background-color: #2a2a2a; */
+  }
+  
+  
+  @media (max-width:766px) {
+    .linkA {
+      padding: 15px 30px;
+    }
+  
+  }
+  
+  .linkB {
+    box-shadow: 0px 0px 3px 1px rgb(0, 179, 255);
+  }
+  
+  
+  /* ----------  sec 1 ------------ */
+  
+  .allDivImg {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: aliceblue; */
+  }
+  
+  .allImgs{
+    border: 2px solid rgb(7, 85, 137);
+    border-radius: 10px;
+    width: 400px !important;
+    padding: 4px !important;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    animation-name: photoSec1;
+    animation-duration: 1s;
+    /* animation-delay: 0.3s; */
+  }
+  
+  @keyframes photoSec1 {
+    0% {
+      scale: 0;
+    }
+    20%{
+      scale: 0;
+  
+    }
+    70%{
+      scale: 1.01;
+    }
+    100% {
+      scale: 1;
+    }
+  }
+  
+  .allImgs::before {
+    position: absolute;
+    content: "";
+    top: -600px;
+    left: -100px;
+    width: 600px;
+    height: 600px;
+    border-radius: 1500px;
+    background: linear-gradient(to right, hsla(205, 69%, 30%, 0.6) 0%, hsla(283, 80%, 17%, 0.8) 100%);
+    z-index: 2;
+    transition: 0.5s;
+  }
+  
+  .allImgs:hover::before {
+    top: -100px;
+  }
+  
+  .divImg {
+    width: 100%;
+    border-radius: 7px;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .divDivImg{
+    /* background-color: aqua; */
+    position: absolute;
+    z-index: -1;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    transition: 0.3s;
+    padding-top: 10px;
+  }
+  
+  .allImgs:hover .divDivImg {
+    top: 50%;
+    z-index: 3;
+  }
+  
+  .divDivImg .p1-divImg{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+  }
+  
+  .divDivImg .p2-divImg{
+  text-align: center;
+  }
+  
+  /* ----------  scound sec  ------------------- */
+  
+  .sc2{
+    background: linear-gradient(30deg, rgb(29, 30, 31) 40.4%, rgb(3, 50, 77) 90.2%);
+    padding: 40px 0px;
+  }
+  
+  .all-sec2{
+    width: 90%;
+    margin: auto;
+  }
+  
+  .leftSec-sec2{
+    /* background-color: rgb(110, 27, 27); */
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imgLeftSec{
+    width: 80%;
+    animation-name: photoAnimate;
+    animation-duration: 1s;
+    /* animation-delay: 0.3s; */
+  }
+  
+  @keyframes photoAnimate {
+    0% {
+      rotate: 0deg;
+      scale: 0;
+    }
+    20%{
+      rotate: 0deg;
+      scale: 0;
+    }
+    70%{
+      scale: 1.1;
+    }
+    100% {
+      rotate: 360deg;
+      scale: 1;
+    }
+  }
+  
+  .rightSec-sec2{
+    /* background-color: rgba(42, 42, 43, 0.853); */
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .scrolD{
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pRightSec{
+    font-size: 30px;
+    /* text-align: center; */
+    color: rgb(214, 214, 214);
+    letter-spacing: 2px;
+  }
+  
+  .rightSec-sec2 div {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .txt-sec2{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 1px 1px rgb(0, 155, 202);
+    background-color: rgb(53, 53, 53);
+    transition: 0.3s;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    caret-color: rgb(0, 155, 202);ax-height: 60px;
+  }
+  
+  .txt-sec2:focus{
+    box-shadow: 0 0 5px 1px rgb(0, 155, 202);
+    background-color: rgb(190, 190, 190);
+  }
+  
+  .txt-sec2::placeholder {
+    color: rgb(128, 192, 211);
+    opacity: 1;
+  }
+  
+  .txt-sec2:focus::placeholder {
+    color: rgb(32, 32, 32);
+    opacity: 1; 
+  }
+  
+  .txtArea-sec2{
+    min-height: 70px;
+    max-height: 200px !important;
+    height: 180px;
+  }
+  
+  .btn-sec2{
+    padding: 10px 15px;
+    width: 160px;
+    border-radius: 10px;
+    background-color: rgb(36, 36, 36);
+    /* border: 1px solid rgb(90, 90, 90); */
+    border: none;
+    outline: none;
+    box-shadow: 0 0 2px 1px rgb(5, 122, 161);
+    color: rgb(251, 251, 251);
+    transition: 0.3s;
+    margin: auto;
+  }
+  
+  .btn-sec2:hover{
+    box-shadow: 0 0 3px 1px rgb(5, 122, 161);
+    background-color: rgb(0, 83, 110);
+    /* font-size: 17px; */
+    scale: 1.05;
+  }
+  
+  /* ------------  third sec  ------------------------------- */
+  
+  .third-sec{
+    /* background-color: aquamarine; */
+    width: 90%;
+    margin: -30px auto 40px auto;
+  }
+  
+  .p-third-sec{
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    animation-name: photoSec3;
+    animation-duration: 1s;
+    position: relative;
+  }
+  
+  @keyframes photoSec3 {
+    0% {
+      scale: 0;
+    }
+    20%{
+      scale: 0;
+    }
+    70%{
+      scale: 1.01;
+    }
+    100% {
+      scale: 1;
+    }
+  }
+  
+  
+  
+  
+  

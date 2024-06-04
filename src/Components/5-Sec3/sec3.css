@@ -1,0 +1,75 @@
+.sec3 {
+	height: 150px;
+	/* background-color: rgb(68, 68, 68); */
+	margin-top: 60px;
+	position: relative;
+}
+
+.containerSec3 {
+	background-color: rgb(40, 40, 40);
+	width: 85%;
+	border-radius: 15px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 60px 40px;
+	margin-left: 0px;
+}
+
+.left-sec3 {
+	/* background-color: rgb(63, 63, 63); */
+	padding-right: 15px;
+	text-transform: capitalize;
+	display: flex;
+	align-items: center;
+}
+
+.right-sec3 {
+	/* background-color: rgb(9, 9, 9); */
+	padding: 0;
+}
+
+.right2-sec3 {
+	border-radius: 10px;
+	padding: 4px;
+	box-shadow: 0 0 1px 1px rgb(0, 120, 184);
+	overflow: hidden;
+	background-color: rgb(40, 40, 40);
+}
+
+.txt-sec3,
+.btn-sec3 {
+	border: none;
+	outline: none;
+}
+
+.txt-sec3 {
+	padding: 10px 15px;
+	background-color: rgb(40, 40, 40);
+	color: rgb(255, 255, 255);
+}
+
+.txt-sec3::placeholder {
+	color: rgb(221, 221, 221);
+	opacity: 1;
+}
+
+.txt-sec3:focus::placeholder {
+	color: rgb(161, 161, 161);
+	opacity: 1;
+}
+
+.btn-sec3 {
+	padding: 10px 5px;
+	background-color: rgb(0, 120, 184);
+	color: rgb(255, 255, 255);
+	border-radius: 7px;
+	transition: 0.3s;
+}
+
+.btn-sec3:hover {
+	background-color: rgb(2, 103, 157);
+}
+
+

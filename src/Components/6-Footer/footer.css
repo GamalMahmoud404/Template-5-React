@@ -1,0 +1,87 @@
+.footer {
+    background-color: rgb(57, 57, 57);
+    /* height: 300px; */
+}
+
+.divFooter {
+    padding-top: 170px;
+    /* background-color: aqua; */
+}
+
+.div2Footer {
+    /* background-color: rgb(53, 66, 62); */
+    padding: 0px 5%;
+    margin-right: 0px !important;
+}
+
+.leftFooterDiv {
+    /* background-color: rgb(72, 72, 72); */
+    height: 120px;
+    position: relative;
+}
+
+@media (max-width:766px) {
+    .pLogoPosition{
+        text-align: center;
+    }
+}
+
+.leftFooterDiv p {
+    font-size: 35px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 10px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.rightFooterDiv {
+    /* background-color: rgb(50, 39, 24); */
+    height: 120px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+}
+
+.right2FooterDiv {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    /* background-color: rgb(3, 41, 74);
+    height: 50px; */
+}
+
+.footerA {
+    display: block;
+    color: var(--iColor);
+    text-decoration: none;
+    border: 2px solid var(--iColor);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 3px ;
+    margin-top: 3px;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: 0.2s;
+    opacity: 0.8;
+    padding: 10px;
+}
+
+.footerA:hover {
+    background-color: var(--iColor);
+    color: var(--fontColorHover);
+}
+
+.footerP{
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: end;
+}
+
+
+
+
+
+

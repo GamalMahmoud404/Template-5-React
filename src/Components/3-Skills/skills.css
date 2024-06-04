@@ -1,0 +1,215 @@
+
+.sec1{
+    width: 90%;
+    margin:  auto ;
+    transform: translateY(-50%);
+}
+
+.allContant{
+    background: var(--BGopacity) ;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 30px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(8px);
+}
+
+@media (max-width : 992px) {
+    .allContant{
+        width: 90%;
+    }
+}
+
+@media (max-width : 768px) {
+    .allContant{
+        width: 100%;
+    }
+}
+
+.p1{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.p2{
+    color: rgb(232, 232, 232);
+}
+
+.boxArrow {
+	position: relative;
+	border-radius: 20px;
+	display: inline-block;
+  height: 1px;
+  width: 60%;
+  margin-bottom: 10px;
+  /* background-color: #041942; */
+}
+
+.boxArrow::before {
+  content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 15px;
+	padding: 2px;
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+	mask-composite: exclude;
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 139, 214, 0.5), rgba(0, 0, 0, 0));
+}
+
+.sliderAll {
+    width: 80%;
+    padding: 10px 0px;
+    /* background-color: rgba(0, 147, 7, 0.262); */
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    font-size: 30px;
+    box-shadow: var(--shadow);
+  }
+  
+  .arrow:hover {
+    opacity: 1;
+  }
+  
+  .left {
+    left: -10px;
+  }
+  
+  .right {
+    right: -10px;
+  }
+
+
+  .custPaging:active{
+    background-color: rgba(180, 180, 180, 0.479) ;
+    border-radius: 10px;
+    scale: 0.7;
+  }
+
+.contanerCircle{
+    min-height: 130px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid rgb(11, 78, 155);
+}
+
+.contanerCircle .contanerCircle2{
+    /* background-color: rgb(60, 94, 94); */
+    width: 120px ;
+    height: 120px;
+    margin: auto;
+}
+
+
+/* ----  Circle   -------------------------------- */
+
+
+.dev2 {
+	background-color: rgb(64, 64, 64);
+	width: 300px;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 20px;
+	border-radius: 20px;
+}
+
+:root {
+	--color1: #0067b5;
+	--color2: #003870;
+	--color3: #970000;
+}
+
+.div3{
+	background-color: rgb(64, 64, 64);
+	width: 80px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	border-radius: 20px;
+}
+
+.progressInput {
+	width: 200px;
+	height: 4px;
+	-webkit-appearance: none;
+	background-image: linear-gradient(to right, var(--color1), var(--color2));
+	border-radius: 5px;
+	rotate: -90deg;
+}
+
+.progressInput::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 15px;
+	height: 10px;
+	border-radius: 7px;
+	background-color: rgb(0, 54, 119);
+	border: 1px solid rgb(163, 163, 163);
+	cursor: pointer;
+	box-shadow: 0px 0px 9px -1px rgb(0, 38, 63)
+				,0px 0px 3px 0px rgb(220, 220, 220) inset;
+}
+
+.circle-background {
+	fill: none;
+	stroke: #717171;
+}
+
+.circle-progress {
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	
+}
+
+.circle-text {
+	font-size: 25px;
+	font-weight: 400;
+  filter: invert(1);
+}
+
+.circle-text2 {
+	font-size: 17px;
+	font-weight: 400;
+  filter: invert(1);
+}
+
+.containerOfCircle{
+  /* background-color: red; */
+  /* border: 2px solid green; */
+  padding: 0px 10px;
+}
+
+.svgClassAll{
+  margin: auto;
+  display: block;
+}
+
+
+
